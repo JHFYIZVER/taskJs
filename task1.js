@@ -12,8 +12,7 @@ const bestProgrammingLanguagel = "JavaScript";
 const bestProgrammingLanguage2 = "Java";
 let initialValue1;
 let initialValue2 = 0;
-var isJavaScriptProgrammer1 = true;
-var isJavaScriptProgrammer2 = false;
+
 let helloTextl = "Hello!";
 let helloText2 = "Привет!";
 
