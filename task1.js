@@ -37,6 +37,6 @@ console.log(
 console.log("var является устаревшим");
 
 let isJavaScriptProgrammer1 = true;
-let isJavaScriptProgrammer1 = false;
+let isJavaScriptProgrammer2 = false;
 
 console.log(isJavaScriptProgrammer1, typeof isJavaScriptProgrammer1);
