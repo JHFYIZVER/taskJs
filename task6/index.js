@@ -11,7 +11,7 @@ const getName2 = function (name) {
 
 console.log(getName2("Вадим"));
 
-const getName3 = (name) => {
+const getName3 = name => {
   return `Имя равно ${name}`;
 };
 
@@ -66,3 +66,31 @@ checkQuestAnswer("Сколько в среднем зубов у взросло�
 checkQuestAnswer("Как называется самая маленькая птица в мире?", "Колибри");
 
 /* №5 */
+
+function showSuccessMessage(message) {
+  console.log(message);
+}
+
+function showErrorMessage(message) {
+  console.log(message);
+}
+
+function checkTextOnErrorSymbol(
+  text,
+  errorSymbol,
+  successCallback = showSuccessMessage,
+  errorCallback = showErrorMessage
+) {
+  for (let i = 0; i < text.length; i++) {
+    if (text[i] === errorSymbol) {
+      errorCallback(
+        `Найден запрещенный символ "${errorSymbol}" под индексом ${i}`
+      );
+    } 
+  }
+  if(!text.includes(errorSymbol)){
+   successCallback('В данном сообщении нет запрещенных символов!')
+  }
+}
+
+checkTextOnErrorSymbol('Привет вадим, как дела?', 'к', showSuccessMessage, showSuccessMessage)
